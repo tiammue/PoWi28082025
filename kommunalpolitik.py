@@ -2,6 +2,7 @@ from manim import *
 
 class Kommunalpolitik(Scene):
     def construct(self):
+        self.camera.background_color = WHITE
         # Scene 1: Introduction
         title = Text("Kommunalpolitik: Was es ist und warum es wichtig ist").scale(0.75)
         self.play(FadeIn(title), Write(title))
