@@ -2,9 +2,8 @@ from manim import *
 
 class Kommunalpolitik(Scene):
     def construct(self):
-        self.camera.background_color = WHITE
         # Scene 1: Introduction
-        title = Text("Kommunalpolitik: Was es ist und warum es wichtig ist", color=BLACK).scale(0.75)
+        title = Text("Kommunalpolitik: Was es ist und warum es wichtig ist", color=BLUE).scale(0.75)
         self.play(FadeIn(title), Write(title))
         self.wait(2)
 
@@ -12,7 +11,7 @@ class Kommunalpolitik(Scene):
         self.wait(1)
 
         # Scene 2: What Does a Kommune Do?
-        kommune_tasks = Text("Was macht eine Kommune?", color=BLACK).scale(0.75)
+        kommune_tasks = Text("Was macht eine Kommune?", color=BLUE).scale(0.75)
         self.play(FadeIn(kommune_tasks), Write(kommune_tasks))
         self.wait(2)
         self.play(FadeOut(kommune_tasks))
@@ -22,7 +21,7 @@ class Kommunalpolitik(Scene):
                     "Öffentliche Dienstleistungen",
                     "Lokale Infrastruktur",
                     "Gemeinschaftsentwicklung",
-                    color=BLACK
+                    color=BLUE
                 ).scale(0.6)
         self.play(FadeIn(tasks), Write(tasks))
         self.wait(3)
@@ -30,16 +29,16 @@ class Kommunalpolitik(Scene):
         self.wait(1)
 
         # Scene 3: How Is It Organized?
-        organization = Text("Wie ist sie organisiert?", color=BLACK).scale(0.75)
+        organization = Text("Wie ist sie organisiert?", color=BLUE).scale(0.75)
         self.play(FadeIn(organization), Write(organization))
         self.wait(2)
         self.play(FadeOut(organization))
         self.wait(1)
 
         # Create a diagram illustrating the structure of Kommunalpolitik
-        rat = Text("Rat", color=BLACK).scale(0.5)
-        verwaltung = Text("Verwaltung", color=BLACK).scale(0.5)
-        burgermeister = Text("Bürgermeister:in", color=BLACK).scale(0.5)
+        rat = Text("Rat", color=BLUE).scale(0.5)
+        verwaltung = Text("Verwaltung", color=BLUE).scale(0.5)
+        burgermeister = Text("Bürgermeister:in", color=BLUE).scale(0.5)
 
         rat.to_edge(UP)
         burgermeister.move_to(ORIGIN)
@@ -51,7 +50,7 @@ class Kommunalpolitik(Scene):
         self.wait(1)
 
         # Scene 4: Get Involved!
-        get_involved = Text("Mach mit!", color=BLACK).scale(0.75)
+        get_involved = Text("Mach mit!", color=BLUE).scale(0.75)
         self.play(FadeIn(get_involved), Write(get_involved))
         self.wait(2)
         self.play(FadeOut(get_involved))
@@ -61,7 +60,7 @@ class Kommunalpolitik(Scene):
                     "Wählen",
                     "Bürgerinitiativen",
                     "Ratssitzungen",
-                    color=BLACK
+                    color=BLUE
                 ).scale(0.6)
         self.play(FadeIn(involvement_methods), Write(involvement_methods))
         self.wait(3)
@@ -69,7 +68,7 @@ class Kommunalpolitik(Scene):
         self.wait(1)
 
         # Scene 5: Kommunalpolitik in Your Daily Life
-        daily_life = Text("Kommunalpolitik in deinem Alltag", color=BLACK).scale(0.75)
+        daily_life = Text("Kommunalpolitik in deinem Alltag", color=BLUE).scale(0.75)
         self.play(FadeIn(daily_life), Write(daily_life))
         self.wait(2)
         self.play(FadeOut(daily_life))
@@ -80,7 +79,7 @@ class Kommunalpolitik(Scene):
                     "Transport",
                     "Parks",
                     "Abfallwirtschaft",
-                    color=BLACK
+                    color=BLUE
                 ).scale(0.6)
         self.play(FadeIn(daily_life_examples), Write(daily_life_examples))
         self.wait(3)
@@ -88,7 +87,7 @@ class Kommunalpolitik(Scene):
         self.wait(1)
 
         # Scene 6: Hamm Examples
-        hamm_examples = Text("Kommunalpolitik in Hamm", color=BLACK).scale(0.75)
+        hamm_examples = Text("Kommunalpolitik in Hamm", color=BLUE).scale(0.75)
         self.play(FadeIn(hamm_examples), Write(hamm_examples))
         self.wait(2)
         self.play(FadeOut(hamm_examples))
@@ -105,7 +104,7 @@ class Kommunalpolitik(Scene):
             "Jochen Dornseifer (CDU)",
             "Marc Herter: [Placeholder for platform]",
             "Jochen Dornseifer: [Placeholder for platform]",
-            color=BLACK
+            color=BLUE
         ).scale(0.6)
         self.play(FadeIn(mayor_candidates), Write(mayor_candidates))
         self.wait(3)
@@ -113,19 +112,19 @@ class Kommunalpolitik(Scene):
         self.wait(1)
 
         # Scene 7: Why Vote?
-        why_vote = Text("Warum wählen?", color=BLACK).scale(0.75)
+        why_vote = Text("Warum wählen?", color=BLUE).scale(0.75)
         self.play(FadeIn(why_vote), Write(why_vote))
         self.wait(2)
         self.play(FadeOut(why_vote))
         self.wait(1)
 
-        voting_importance = Text("Gestalte die Zukunft deiner Gemeinde!", color=BLACK).scale(0.6)
+        voting_importance = Text("Gestalte die Zukunft deiner Gemeinde!", color=BLUE).scale(0.6)
         self.play(FadeIn(voting_importance), Write(voting_importance))
         self.wait(1)
         self.play(FadeOut(voting_importance))
         self.wait(1)
 
-        voting_is_crucial = Text("Deine Stimme zählt!", color=BLACK).scale(0.7)
+        voting_is_crucial = Text("Deine Stimme zählt!", color=BLUE).scale(0.7)
         self.play(FadeIn(voting_is_crucial), Write(voting_is_crucial))
         self.wait(2)
         self.play(FadeOut(voting_is_crucial))
@@ -139,7 +138,7 @@ class Kommunalpolitik(Scene):
         # TODO: Consider adding more detailed information about the candidates and their platforms.
 
         # Scene 8: Conclusion
-        conclusion = Text("Kommunalpolitik: Essentiell für eine blühende Gemeinde!", color=BLACK).scale(0.75)
+        conclusion = Text("Kommunalpolitik: Essentiell für eine blühende Gemeinde!", color=BLUE).scale(0.75)
         self.play(FadeIn(conclusion), Write(conclusion))
         self.wait(3)
         self.play(FadeOut(conclusion))
